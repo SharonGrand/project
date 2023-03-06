@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        .signup {
+        border:3px solid #999999;
+        font: normal 14px helvetica;
+        color: #444444;
+        padding: 10px;
+        margin: 20px;
+        }
+        
+        </style>
+    <script>
+        function validate(form)
+        {
+        fail = validateForename(form.forename.value)
+        fail += validateSurname(form.surname.value)
+        fail += validateUsername(form.username.value)
+        fail += validatePassword(form.password.value)
+        fail += validateAge(form.age.value)
+        fail += validateEmail(form.email.value)
+        if (fail == "") return true
+        else { alert(fail); return false }
+        }
+        </script>       
+</head>
+<body style="background-color: green;    box-sizing:border-box;
+margin:5px;
+padding: 5px;">
+<div style="display: center;color: gold;">
+    At dream land you find to meet with your land sellers and buyers<br>
+    You also find to see video of the land<br>
+    We link you with our best customers that will build your trust<br>
+   <b> we only offer what you desire</b>
+    click on the link to view some more video about the page
+</div>
+<h1>
+    Please fill i the form on what you need about your dream land
+</h1>
+    <table class="signup" border="0" cellpadding="8"
+    cellspacing="16" bgcolor="#eeeeee">
+    <th colspan="8" align="center">Signup Form</th>
+    <form method="post" action="adduser.php" onsubmit="return validate(this)">
+    <tr><td>country</td>
+    <td><input type="text" maxlength="32" name="county"></td></tr>
+    <tr><td>County</td>
+    <td><input type="text" maxlength="32" name="subCounty"></td></tr>
+    <tr><td>Sub County</td>
+    <td><input type="text" maxlength="16" name="constituency"></td></tr>
+    <tr><td>constituency</td>
+    <td><input type="text" maxlength="12" name="ward"></td></tr>
+    <tr><td>ward</td>
+    <td><input type="text" maxlength="3" name="location"></td></tr>
+    <tr><td>location</td>
+    <td><input type="text" maxlength="64" name="subLocation"></td></tr>
+    <tr><td colspan="2" align="center"><input type="submit"
+        value="Submit"></td></tr>
+        </form>
+        </table>
+       
+    <p id="land">
+    </p>
+    <script src="scriptA.js"></script>
+</body>
+</html>

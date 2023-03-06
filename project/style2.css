@@ -1,0 +1,164 @@
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(26, 29, 29);
+    /*padding: 1rem 2rem;*/
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /*text-transform:uppercase;*/
+}
+
+/*nav styles*/
+
+.nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    background-color:blue ;
+} 
+
+.hamburger {
+       padding-right: 20px;
+       cursor: pointer;
+}
+
+.hamburger .line{
+         display: block;
+         width: 40px;
+         height: 5px;
+         margin-bottom: 10px;
+         background-color: white;
+}
+
+.nav_link{
+    position: fixed;
+    width: 100%;
+    top: 3.5rem;
+    background-color: green;
+}
+
+.nav_link a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.nav_link a:hover{
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (min-width:600px){
+    .nav_link{
+        display: block;
+        position:static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+    .nav_link a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .hamburger{
+        display: none;
+    }
+    
+}
+h1 {
+    margin-bottom: 8%;
+    text-align: center;
+    font-family: "Fredoka One", cursive;
+    color: #01a2a8;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+  }
+
+  p span {
+    background:#fff;
+    padding:0 10px;
+  }
+
+  input {
+    margin-bottom: 3%;
+  }
+
+  input:last-of-type {
+    margin-bottom: 0;
+  }
+
+  input, button {
+    padding: 3%;
+    width: 100%;
+  }
+
+  .login-container {
+    background-color: white;
+    padding: 7%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40vw;
+    margin: auto;
+    height: 130vh;
+    margin-top: 9vh;
+  }
+
+  #submit, #create-acct-btn {
+    background-color: #AB1449;
+    color: white;
+    border: ;
+    margin-top: 5%;
+  }
+
+  button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  #sign-up {
+    border: ;
+  }
+
+  #create-acct {
+    display: ;
+  }
+
+  #return-btn {
+    background: ;
+    color: grey;
+    text-decoration: ;
+    border: ;
+    margin-top: 3%;
+  }
+  body{
+    background-color: greenyellow;
+  }
