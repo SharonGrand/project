@@ -58,7 +58,7 @@ h1 {
   }
 
   #sign-up {
-    border: none;
+    border: ;
   }
 
   #create-acct {
@@ -66,10 +66,10 @@ h1 {
   }
 
   #return-btn {
-    background: none;
+    background: ;
     color: grey;
     text-decoration: underline;
-    border: none;
+    border: ;
     margin-top: 3%;
   } 
   body{
